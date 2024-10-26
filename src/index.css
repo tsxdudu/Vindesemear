@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #000;
+  height: 100vh;
+}
+
+.logo {
+  color: white;
+}
+
+.logo span {
+  color: #ff7300;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.btn-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #ff7300;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+h2.titulo{
+  color: #fff;
+  font-size: 38px;
+  text-align: center;
+}
+
+h2.titulo span{
+  color: #ff7300;
+}
+
+header {
+  padding: 40px 4%;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #797777;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+header a:hover {
+  color: #fff;
+  transform: scale(1.13);
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+.btn-contato button:hover {
+  box-shadow: 0px 0px 10px #ff910070;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+section.topo-do-site {
+  padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.topo-do-site h1 {
+  color: #fff;
+  font-size: 42px;
+  line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+  color: #ff7300;
+}
+
+.topo-do-site .txt-topo-site p {
+  color: #fff;
+  margin: 40px 0px;
+}
+
+.topo-do-site .img-topo-site img {
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 30px;
+  }
+}
+
+section.atividades{
+  padding: 40px 4%;
+}
+
+section.atividades .flex{
+  gap: 60px;
+}
+
+.atividades .atividades-box{
+  color: #fff;
+  padding: 40px;
+  border-radius: 25px;
+  margin-top: 45px;
+  transition: .2s;
+}
+
+.atividades .atividades-box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ffffff6c;
+}
+
+
+.atividades .atividades-box i{
+  font-size: 70px;
+  color: #ff7300;
+}
+
+.atividades .atividades-box h3{
+  font-size: 28px;
+  margin: 15px 0px;
+}
+
+.custom-carousel {
+  width: 80%;
+  margin: auto;
+}
+
+.carousel-item img {
+  width: 100%; 
+  height: 500px; 
+  object-fit: cover;
+}
+
+section.sobre{
+  padding: 40px 4%;
+}
+
