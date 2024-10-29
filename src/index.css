@@ -27,7 +27,7 @@ body {
   display: flex;
 }
 
-.btn-contato button {
+.btn-contato button , .Sobre button {
   padding: 10px 40px;
   font-size: 18px;
   font-weight: 500;
@@ -78,7 +78,7 @@ header nav ul li {
   padding: 0 40px;
 }
 
-.btn-contato button:hover {
+.btn-contato button:hover, .Sobre button:hover {
   box-shadow: 0px 0px 10px #ff910070;
   transform: scale(1.05);
   transition: 0.2s;
@@ -156,18 +156,334 @@ section.atividades .flex{
   margin: 15px 0px;
 }
 
-.custom-carousel {
-  width: 80%;
-  margin: auto;
+section.Sobre{
+  height: 600px;
+  background-image: url(../public/img/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  position: relative;
+  color: #fff;
+  text-align: center;
 }
 
-.carousel-item img {
-  width: 100%; 
-  height: 500px; 
-  object-fit: cover;
+.Sobre > .overlay{
+  position:absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000d5;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
-section.sobre{
+.Sobre > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  flex-direction: row;
+  height: 100%; 
+  z-index: 2;
+  position: relative;
+}
+
+.Sobre .texto { 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-right: 20px;
+  text-align: center;
+}
+
+.Sobre h3 {
+  margin: 16px 0; 
+  font-size: 3em;
+  line-height: 50px;
+  font-weight: 500;
+}
+
+.Sobre h3 span {
+  color: #ff7300;
+  font-weight: 600;
+}
+
+.Sobre p {
+  height: 280px;
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 300;
+  max-width: 1000px;
+}
+
+.Sobre .carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0; 
+}
+
+.Sobre .carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.Sobre .carousel-item.active {
+  opacity: 1;
+  position: relative;
+}
+
+.Sobre .carousel-item img {
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  border-radius: 25px; 
+  padding: 20px; 
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  transition: transform 0.3s; 
+  text-align: center; 
+  margin: 20px 200px;
+  font-size: 28px;
+  width: 100%;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card p {
+  margin: 20px 0;
+}
+
+.card span{
+  color: #ff7300;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+section.localizacao {
   padding: 40px 4%;
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #131212; 
+  color: #fff; 
+  padding: 20px 0; 
+  text-align: left; 
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: flex; 
+  justify-content: space-around; 
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px; 
+  min-width: 150px; 
+}
+
+.footer-section h4 {
+  border-bottom: 2px solid #fff; 
+  padding-bottom: 5px; 
+}
+
+.footer-section a {
+  color: #fff; 
+  text-decoration: none; 
+}
+
+.footer-section a:hover {
+  text-decoration: underline; 
+}
+
+.footer-bottom {
+  text-align: center; 
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-section h4{
+  color: #ff7300;
+}
+
+.footer-section span {
+ color: #fff;
+}
+
+
+@media (max-width: 768px) {
+  .interface {
+    padding: 0 20px;
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header > .interface {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav ul {
+    padding: 0;
+    text-align: center;
+  }
+
+  header nav ul li {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .btn-contato button, .Sobre button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  section.topo-do-site .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .topo-do-site .img-topo-site {
+    margin-top: 20px;
+  }
+
+  section.atividades .flex {
+    flex-direction: column;
+  }
+
+  .atividades .atividades-box {
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .Sobre {
+    height: auto; 
+    padding: 40px 4%;
+    background-attachment: scroll;
+    margin-bottom: 40px;
+  }
+
+  .Sobre .interface {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .Sobre .texto {
+    margin: 0 0 20px 0; 
+  }
+
+  .Sobre .carousel {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .card {
+    margin: 20px 0;
+    padding: 15px;
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin: 20px 0;
+  }
+
+  section.localizacao {
+    padding: 20px 4%;
+    text-align: center;
+    margin-top: 20px; 
+  }
+
+  .localizacao .interface {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .localizacao .card {
+    margin-bottom: 20px;
+  }
+
+  .localizacao #map {
+    width: 90%;
+    max-width: 100%;
+    height: 80px; 
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  h2.titulo {
+    font-size: 28px;
+  }
+
+  .topo-do-site h1 {
+    font-size: 32px;
+  }
+
+  .Sobre h3 {
+    font-size: 1.8em;
+    line-height: 1.2em;
+  }
+
+  .Sobre p {
+    font-size: 16px;
+    height: auto;
+  }
+
+  .atividades .atividades-box h3 {
+    font-size: 22px;
+  }
+
+  .btn-contato button, .Sobre button {
+    font-size: 14px;
+    padding: 8px 30px;
+  }
+
+  .card {
+    font-size: 22px;
+  }
+
+  .Sobre .carousel {
+    margin: 15px 0;
+  }
+
+  section.localizacao {
+    padding: 15px 4%;
+    margin-top: 20px;
+  }
+
+  .localizacao #map {
+    height: 60px; 
+  }
 }
 
