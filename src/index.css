@@ -19,7 +19,7 @@ body {
   color: #ff7300;
 }
 
-.menu-desktop{
+.menu-desktop {
   position: relative;
   top: 9px;
 }
@@ -33,7 +33,8 @@ body {
   display: flex;
 }
 
-.btn-contato button , .Sobre button {
+.btn-contato button,
+.Sobre button {
   padding: 10px 40px;
   font-size: 18px;
   font-weight: 500;
@@ -43,13 +44,13 @@ body {
   cursor: pointer;
 }
 
-h2.titulo{
+h2.titulo {
   color: #fff;
   font-size: 38px;
   text-align: center;
 }
 
-h2.titulo span{
+h2.titulo span {
   color: #ff7300;
 }
 
@@ -58,11 +59,11 @@ header {
   top: 0;
   width: 100%;
   padding: 18px 4%;
-  background-color: rgb(0, 0, 0); 
+  background-color: rgb(0, 0, 0);
   z-index: 3;
 }
 
-header > .interface {
+header>.interface {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -89,7 +90,8 @@ header nav.menu-desktop ul li {
   padding: 0 40px;
 }
 
-.btn-contato button:hover, .Sobre button:hover {
+.btn-contato button:hover,
+.Sobre button:hover {
   box-shadow: 0px 0px 10px #ff910070;
   transform: scale(1.05);
   transition: 0.2s;
@@ -130,20 +132,21 @@ section.topo-do-site .flex {
   0% {
     top: 0;
   }
+
   100% {
     top: 30px;
   }
 }
 
-section.atividades{
+section.atividades {
   padding: 40px 4%;
 }
 
-section.atividades .flex{
+section.atividades .flex {
   gap: 60px;
 }
 
-.atividades .atividades-box{
+.atividades .atividades-box {
   color: #fff;
   padding: 40px;
   border-radius: 25px;
@@ -151,23 +154,23 @@ section.atividades .flex{
   transition: .2s;
 }
 
-.atividades .atividades-box:hover{
+.atividades .atividades-box:hover {
   transform: scale(1.05);
   box-shadow: 0 0 15px #ffffff6c;
 }
 
 
-.atividades .atividades-box i{
+.atividades .atividades-box i {
   font-size: 70px;
   color: #ff7300;
 }
 
-.atividades .atividades-box h3{
+.atividades .atividades-box h3 {
   font-size: 28px;
   margin: 15px 0px;
 }
 
-section.Sobre{
+section.Sobre {
   height: 600px;
   background-image: url(../public/img/banner.jpg);
   background-position: center;
@@ -180,8 +183,8 @@ section.Sobre{
   text-align: center;
 }
 
-.Sobre > .overlay{
-  position:absolute;
+.Sobre>.overlay {
+  position: absolute;
   top: 0;
   left: 0;
   background-color: #000000d5;
@@ -190,26 +193,26 @@ section.Sobre{
   z-index: 1;
 }
 
-.Sobre > .interface {
+.Sobre>.interface {
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   flex-direction: row;
-  height: 100%; 
+  height: 100%;
   z-index: 2;
   position: relative;
 }
 
-.Sobre .txt-sobre { 
+.Sobre .txt-sobre {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   margin-right: 20px;
   text-align: center;
 }
 
 .Sobre h3 {
-  margin: 16px 0; 
+  margin: 16px 0;
   font-size: 3em;
   line-height: 50px;
   font-weight: 500;
@@ -231,7 +234,7 @@ section.Sobre{
   position: relative;
   width: 100%;
   max-width: 600px;
-  margin: 0; 
+  margin: 0;
 }
 
 .Sobre .carousel-item {
@@ -255,12 +258,12 @@ section.Sobre{
 }
 
 .my-card {
-  border-radius: 25px; 
-  padding: 20px; 
+  border-radius: 25px;
+  padding: 20px;
   color: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
-  transition: transform 0.3s; 
-  text-align: center; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+  text-align: center;
   margin: 20px 200px;
   font-size: 28px;
   width: 100%;
@@ -274,7 +277,7 @@ section.Sobre{
   margin: 20px 0;
 }
 
-.my-card span{
+.my-card span {
   color: #ff7300;
 }
 
@@ -288,41 +291,41 @@ section.my-localizacao {
 }
 
 footer {
-  background-color: #131212; 
-  color: #fff; 
-  padding: 20px 0; 
-  text-align: left; 
+  background-color: #131212;
+  color: #fff;
+  padding: 20px 0;
+  text-align: left;
   margin-top: 40px;
 }
 
 .footer-content {
-  display: flex; 
-  justify-content: space-around; 
+  display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .footer-section {
   flex: 1;
-  margin: 10px; 
-  min-width: 150px; 
+  margin: 10px;
+  min-width: 150px;
 }
 
 .footer-section h4 {
-  border-bottom: 2px solid #fff; 
-  padding-bottom: 5px; 
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
 }
 
 .footer-section a {
-  color: #fff; 
-  text-decoration: none; 
+  color: #fff;
+  text-decoration: none;
 }
 
 .footer-section a:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 .footer-bottom {
-  text-align: center; 
+  text-align: center;
   margin-top: 20px;
 }
 
@@ -330,14 +333,17 @@ footer {
   margin: 0;
 }
 
-.footer-section h4{
+.footer-section h4 {
   color: #ff7300;
 }
 
 .footer-section span {
- color: #fff;
+  color: #fff;
 }
 
+.my-localizacao {
+  z-index: 5;
+}
 
 .text-orange-700 {
   color: var(--bs-orange-700);
@@ -347,103 +353,147 @@ footer {
   background-color: var(--bs-orange-700);
 }
 
-#insta{
+#insta {
   cursor: pointer;
 }
 
-.menu-mobile{
+.menu-mobile {
   background-color: #000;
-  height:107vh;
-  position:fixed;
+  height: 115vh;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 9999;
   width: 0%;
   overflow: hidden;
+  transition: .5s;
 }
 
-.btn-abrir-menu i{
+.menu-mobile.abrir-menu{
+  width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+  display: block;
+}
+
+.btn-abrir-menu i {
   color: #ff7300;
   font-size: 40px;
 }
 
-.menu-mobile .btn-fechar{
+.menu-mobile .btn-fechar {
   padding: 20px 5%;
 }
 
-.menu-mobile .btn-fechar i{
+.menu-mobile .btn-fechar i {
   color: #ff6905;
   font-size: 30px;
 }
 
-.menu-mobile nav ul{
+.menu-mobile nav ul {
   text-align: right;
 }
 
-.menu-mobile nav ul li a{
- color: #fff;
- font-size: 20px;
- font-weight: 500;
- padding: 20px 8%;
- display: block;
+.menu-mobile nav ul li a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px 8%;
+  display: block;
 }
 
-.menu-mobile nav ul li a:hover{
+.menu-mobile nav ul li a:hover {
   background-color: #ff6905;
   color: #000;
 }
 
+.overlay-menu {
+  background-color: #000000c4;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  display: none;
+}
+
+.btn-abrir-menu {
+  display: none;
+}
+
+
 @media screen and (max-width: 1020px) {
+
+  .btn-abrir-menu {
+    display: block;
+  }
+
   .flex {
     flex-direction: column-reverse;
   }
-  .menu-desktop, .btn-contato {
+
+  .menu-desktop,
+  .btn-contato {
     display: none;
   }
+
   section.topo-do-site {
     padding: 20px 8%;
   }
+
   .topo-do-site h1 {
     font-size: 30px;
   }
+
   .topo-do-site .img-topo-site img {
     width: 100%;
   }
+
   section.topo-do-site .flex {
     gap: 40px;
   }
+
   section.atividades {
     padding: 40px 8%;
   }
+
   section.Sobre {
     height: auto;
     padding: 20px 8%;
     position: relative;
   }
+
   .Sobre .interface {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .Sobre .txt-sobre {
     margin: 10px 0;
     text-align: center;
     max-width: 90%;
   }
+
   .Sobre .carousel {
     width: 100%;
     max-width: 90%;
     margin-top: 20px;
   }
+
   .my-localizacao .interface {
     flex-direction: column;
     align-items: center;
   }
+
   .my-card {
     margin: 10px;
     text-align: center;
   }
-  .Sobre > .overlay {
+
+  .Sobre>.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -452,16 +502,15 @@ footer {
     height: 100%;
     z-index: 0;
   }
+
   #map {
     width: 100%;
     max-width: 90%;
     margin-top: 20px;
   }
+
   .footer-section {
     margin: 38px;
     text-align: center;
   }
 }
-
-
-
