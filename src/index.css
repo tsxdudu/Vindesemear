@@ -428,6 +428,7 @@ footer {
 
   .btn-abrir-menu {
     display: block;
+    cursor: pointer;
   }
 
   .flex {
@@ -438,6 +439,7 @@ footer {
   .btn-contato {
     display: none;
   }
+  
 
   section.topo-do-site {
     padding: 20px 8%;
@@ -493,6 +495,10 @@ footer {
     text-align: center;
   }
 
+  .my-card h2{
+    font-size: 40px;
+  }
+
   .Sobre>.overlay {
     position: absolute;
     top: 0;
@@ -504,12 +510,22 @@ footer {
   }
 
   #map {
-    margin-top: 20px;
-    width: 100px; 
-    height: 100px; 
-    border-radius: 20px; 
-    z-index: 0;
+    width: 350px !important;
+    height: 300px !important;
+    margin-top: 20px !important;
+    border-radius: 20px !important;
   }
+
+  .my-localizacao .interface {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .my-card {
+    margin: 10px;
+    text-align: center;
+  }
+
 
   .footer-section {
     margin: 38px;
