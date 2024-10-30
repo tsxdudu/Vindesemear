@@ -359,7 +359,7 @@ footer {
 
 .menu-mobile {
   background-color: #000;
-  height: 115vh;
+  height: 100vh;
   position: fixed;
   top: 0;
   right: 0;
@@ -424,7 +424,7 @@ footer {
 }
 
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 800px) {
 
   .btn-abrir-menu {
     display: block;
