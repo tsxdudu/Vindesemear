@@ -35,7 +35,8 @@
       <div class="btn-contato">
         <a href="#">
           <button><a style="color: #000;" href="https://wa.me/554195524041">Contato</a></button>
-          <i style="color: #d97706; cursor: pointer; position: relative; top: 3px;" class="bi bi-instagram fs-2 m-2"></i>
+          <i style="color: #d97706; cursor: pointer; position: relative; top: 3px;"
+            class="bi bi-instagram fs-2 m-2"></i>
           <i style="color: #d97706; cursor: pointer; position: relative; top: 2px;" class="bi bi-facebook fs-2 m-2"></i>
         </a>
       </div>
@@ -59,7 +60,7 @@
 
       </div>
 
-      
+
   </header>
 
   <main>
@@ -195,14 +196,18 @@
   <script>
     var map = L.map('map').setView([-25.335415, -49.22658], 13);
 
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a>',
+      subdomains: 'abcd',
+      maxZoom: 20,
+      minZoom: 0
     }).addTo(map);
 
     L.marker([-25.335415, -49.22658]).addTo(map)
       .bindPopup('R. Natálio Zanon, 67 - Palmital, Colombo - PR, 83413-460')
       .openPopup();
   </script>
+
 </body>
 
 </html>
