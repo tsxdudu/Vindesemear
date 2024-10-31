@@ -370,11 +370,11 @@ footer {
   transition: width 0.5s ease-in-out;
 }
 
-.menu-mobile.abrir-menu{
+.menu-mobile.abrir-menu {
   width: 70%;
 }
 
-.menu-mobile.abrir-menu ~ .overlay-menu{
+.menu-mobile.abrir-menu~.overlay-menu {
   display: block;
 }
 
@@ -440,7 +440,7 @@ footer {
   .btn-contato {
     display: none;
   }
-  
+
 
   section.topo-do-site {
     padding: 20px 8%;
@@ -481,8 +481,7 @@ footer {
   }
 
   .Sobre .carousel {
-    width: 100%;
-    max-width: 90%;
+    width: 390px;
     margin-top: 20px;
   }
 
@@ -496,7 +495,7 @@ footer {
     text-align: center;
   }
 
-  .my-card h2{
+  .my-card h2 {
     font-size: 40px;
   }
 
@@ -532,4 +531,9 @@ footer {
     margin: 38px;
     text-align: center;
   }
+
+  section.Sobre {
+    background-image:none;
+  }
+
 }
